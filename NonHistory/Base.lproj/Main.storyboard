@@ -190,6 +190,9 @@
                                     <constraint firstAttribute="height" constant="70" id="mxY-Pr-mxY"/>
                                 </constraints>
                                 <state key="normal" image="sad"/>
+                                <connections>
+                                    <segue destination="FqH-je-d1D" kind="show" id="16c-Cs-uI3"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -209,10 +212,10 @@
             </objects>
             <point key="canvasLocation" x="2292.753623188406" y="-296.65178571428572"/>
         </scene>
-        <!--View Controller-->
+        <!--History View Controller-->
         <scene sceneID="DzQ-zp-hR2">
             <objects>
-                <viewController id="FqH-je-d1D" sceneMemberID="viewController">
+                <viewController id="FqH-je-d1D" customClass="historyViewController" customModule="NonHistory" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iRz-xF-pLW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -231,7 +234,7 @@
                                 </constraints>
                                 <state key="normal" image="elipse"/>
                                 <connections>
-                                    <segue destination="0Lv-9u-X2o" kind="show" id="dNw-Ef-rIz"/>
+                                    <action selector="personagemChapter1:" destination="FqH-je-d1D" eventType="touchUpInside" id="kOF-WY-45n"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -245,6 +248,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Mhp-Fa-uvd"/>
                     </view>
+                    <connections>
+                        <segue destination="0Lv-9u-X2o" kind="presentation" identifier="personagemChapter1" id="H7q-ZD-0Fk"/>
+                        <segue destination="isX-Ks-92f" kind="presentation" identifier="chapter1Done" id="w3S-li-NUC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rrf-rU-XJJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -259,7 +266,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capítulo 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B8b-Og-Jym">
-                                <rect key="frame" x="29" y="79" width="218" height="59"/>
+                                <rect key="frame" x="29" y="79" width="223" height="59"/>
                                 <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway Thin" pointSize="50"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -276,6 +283,9 @@
                                 <state key="normal" title="Vamos começar?">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Jkk-hR-dph" kind="show" id="XdL-x1-15S"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -286,7 +296,6 @@
                             <constraint firstItem="5wW-9g-kvQ" firstAttribute="top" secondItem="B8b-Og-Jym" secondAttribute="bottom" constant="8" id="NOQ-4f-Aus"/>
                             <constraint firstItem="P8C-dx-c4v" firstAttribute="centerX" secondItem="Bws-QM-Lan" secondAttribute="centerX" id="XyH-dP-11r"/>
                             <constraint firstItem="B8b-Og-Jym" firstAttribute="leading" secondItem="Bws-QM-Lan" secondAttribute="leading" constant="29" id="eQ9-oc-3sh"/>
-                            <constraint firstItem="Bws-QM-Lan" firstAttribute="trailing" secondItem="B8b-Og-Jym" secondAttribute="trailing" constant="167" id="im9-F5-3ZP"/>
                             <constraint firstItem="B8b-Og-Jym" firstAttribute="top" secondItem="Bws-QM-Lan" secondAttribute="top" constant="35" id="mK8-fG-YCf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Bws-QM-Lan"/>
@@ -295,6 +304,48 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pwp-Vf-nZr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4001" y="21"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="H29-nc-3mD">
+            <objects>
+                <viewController id="Jkk-hR-dph" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZmR-jH-D5b">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Toda história se passa em um universo. Mas aqui você pode escolher o caminho que você quiser." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gr0-K8-3PV">
+                                <rect key="frame" x="41" y="365" width="332" height="176.33333333333337"/>
+                                <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway Thin" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WDu-hE-vfk">
+                                <rect key="frame" x="79" y="761" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                                <state key="normal" image="quadrado"/>
+                                <connections>
+                                    <action selector="botaoPersonagem1:" destination="80U-sz-bHm" eventType="touchUpInside" id="nat-OB-cpZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KVe-fv-lAH">
+                                <rect key="frame" x="266" y="761" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="elipse"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="2eM-dl-UfI" firstAttribute="trailing" secondItem="Gr0-K8-3PV" secondAttribute="trailing" constant="41" id="Np9-hF-dW1"/>
+                            <constraint firstItem="Gr0-K8-3PV" firstAttribute="centerY" secondItem="2eM-dl-UfI" secondAttribute="centerY" id="gLH-Cp-u1L"/>
+                            <constraint firstItem="Gr0-K8-3PV" firstAttribute="leading" secondItem="2eM-dl-UfI" secondAttribute="leading" constant="41" id="yzg-wJ-t9e"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2eM-dl-UfI"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g80-WK-jpA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4788.4057971014499" y="21.428571428571427"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="rff-9p-vGh">
@@ -357,10 +408,10 @@
             </objects>
             <point key="canvasLocation" x="2293" y="431"/>
         </scene>
-        <!--View Controller-->
+        <!--History View Controller-->
         <scene sceneID="Tso-vd-0Ij">
             <objects>
-                <viewController id="68I-I1-1ae" sceneMemberID="viewController">
+                <viewController id="68I-I1-1ae" customClass="historyViewController" customModule="NonHistory" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uNZ-Fp-ISP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -380,7 +431,7 @@
                                 </constraints>
                                 <state key="normal" title="Button" image="quadrado"/>
                                 <connections>
-                                    <segue destination="COb-75-gKb" kind="show" id="7ET-Ff-xd4"/>
+                                    <action selector="universoChapter1:" destination="68I-I1-1ae" eventType="touchUpInside" id="cAg-z2-zzh"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -391,6 +442,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="XPb-Wz-b1d"/>
                     </view>
+                    <connections>
+                        <segue destination="COb-75-gKb" kind="presentation" identifier="universoChapter1" id="7PQ-C6-0Tm"/>
+                        <segue destination="isX-Ks-92f" kind="presentation" identifier="chapter1Done" id="WWf-45-iU1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZMk-HT-F8q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -406,6 +461,8 @@
     <inferredMetricsTieBreakers>
         <segue reference="fmw-NM-fxn"/>
         <segue reference="jV5-He-tdl"/>
+        <segue reference="w3S-li-NUC"/>
+        <segue reference="16c-Cs-uI3"/>
         <segue reference="0ot-3e-VrL"/>
     </inferredMetricsTieBreakers>
 </document>
