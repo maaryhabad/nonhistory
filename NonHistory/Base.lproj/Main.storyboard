@@ -33,9 +33,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pl2-QN-mak">
-                                <rect key="frame" x="343" y="805" width="51" height="57"/>
+                                <rect key="frame" x="353" y="805" width="41" height="57"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="57" id="BtQ-K0-Vbu"/>
+                                    <constraint firstAttribute="width" secondItem="Pl2-QN-mak" secondAttribute="height" multiplier="41:57" id="Qqe-Sy-vNq"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Raleway-Thin" family="Raleway Thin" pointSize="80"/>
                                 <state key="normal" title="&gt;">
@@ -50,7 +51,6 @@
                         <constraints>
                             <constraint firstItem="JhL-15-jb3" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" constant="143" id="5Fn-7x-KG6"/>
                             <constraint firstItem="Pl2-QN-mak" firstAttribute="top" secondItem="JhL-15-jb3" secondAttribute="bottom" constant="8" id="9AW-f5-txK"/>
-                            <constraint firstItem="Pl2-QN-mak" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" constant="343" id="B6Y-VT-SHi"/>
                             <constraint firstItem="4qk-I5-YsI" firstAttribute="bottom" secondItem="Pl2-QN-mak" secondAttribute="bottom" id="b6M-yy-xsz"/>
                             <constraint firstItem="4qk-I5-YsI" firstAttribute="trailing" secondItem="Pl2-QN-mak" secondAttribute="trailing" constant="20" id="gci-gn-PAo"/>
                             <constraint firstItem="4qk-I5-YsI" firstAttribute="trailing" secondItem="JhL-15-jb3" secondAttribute="trailing" constant="20" id="jlm-IM-EGh"/>
@@ -450,6 +450,43 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZMk-HT-F8q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3042" y="432"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="DsQ-wk-4QA">
+            <objects>
+                <viewController id="1cu-Sg-fpV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="msd-ib-UJm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wyu-ep-iiG">
+                                <rect key="frame" x="0.0" y="49" width="207" height="813"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lSg-no-wKg">
+                                <rect key="frame" x="207" y="49" width="207" height="813"/>
+                                <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Wyu-ep-iiG" firstAttribute="leading" secondItem="ja0-13-4pj" secondAttribute="leading" id="2tQ-ew-CGb"/>
+                            <constraint firstItem="ja0-13-4pj" firstAttribute="trailing" secondItem="lSg-no-wKg" secondAttribute="trailing" id="LOe-Rd-bNs"/>
+                            <constraint firstItem="ja0-13-4pj" firstAttribute="bottom" secondItem="lSg-no-wKg" secondAttribute="bottom" id="S7M-hj-Yv4"/>
+                            <constraint firstItem="Wyu-ep-iiG" firstAttribute="width" secondItem="msd-ib-UJm" secondAttribute="width" multiplier="0.5" id="XU0-G9-DU8"/>
+                            <constraint firstItem="ja0-13-4pj" firstAttribute="bottom" secondItem="Wyu-ep-iiG" secondAttribute="bottom" id="Ztk-2j-vm8"/>
+                            <constraint firstItem="lSg-no-wKg" firstAttribute="width" secondItem="Wyu-ep-iiG" secondAttribute="width" id="dxF-YM-pDF"/>
+                            <constraint firstItem="lSg-no-wKg" firstAttribute="top" secondItem="ja0-13-4pj" secondAttribute="top" constant="5" id="eZB-Ab-w7t"/>
+                            <constraint firstItem="Wyu-ep-iiG" firstAttribute="top" secondItem="ja0-13-4pj" secondAttribute="top" constant="5" id="lTP-Jp-6mA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ja0-13-4pj"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kNu-jb-y4W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6525" y="1185"/>
         </scene>
     </scenes>
     <resources>
