@@ -8,15 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		CD1A309A2271ECD8006781EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1A30992271ECD8006781EE /* AppDelegate.swift */; };
-		CD1A309C2271ECD8006781EE /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = CD1A309B2271ECD8006781EE /* GameScene.sks */; };
-		CD1A309E2271ECD8006781EE /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = CD1A309D2271ECD8006781EE /* Actions.sks */; };
-		CD1A30A02271ECD8006781EE /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1A309F2271ECD8006781EE /* GameScene.swift */; };
 		CD1A30A22271ECD8006781EE /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1A30A12271ECD8006781EE /* GameViewController.swift */; };
 		CD1A30A52271ECD8006781EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD1A30A32271ECD8006781EE /* Main.storyboard */; };
 		CD1A30A72271ECD9006781EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD1A30A62271ECD9006781EE /* Assets.xcassets */; };
 		CD1A30AA2271ECD9006781EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD1A30A82271ECD9006781EE /* LaunchScreen.storyboard */; };
 		CD1A30B52271ECD9006781EE /* NonHistoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1A30B42271ECD9006781EE /* NonHistoryTests.swift */; };
 		CD1A30C02271ECDA006781EE /* NonHistoryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1A30BF2271ECDA006781EE /* NonHistoryUITests.swift */; };
+		CD1A30DC227200D0006781EE /* Raleway-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD1A30D92271FB31006781EE /* Raleway-Thin.ttf */; };
+		CD1A30DD227200D4006781EE /* Raleway-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD1A30D82271FB31006781EE /* Raleway-Black.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +38,6 @@
 /* Begin PBXFileReference section */
 		CD1A30962271ECD8006781EE /* NonHistory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NonHistory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD1A30992271ECD8006781EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CD1A309B2271ECD8006781EE /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		CD1A309D2271ECD8006781EE /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
-		CD1A309F2271ECD8006781EE /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		CD1A30A12271ECD8006781EE /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		CD1A30A42271ECD8006781EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD1A30A62271ECD9006781EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +49,8 @@
 		CD1A30BB2271ECDA006781EE /* NonHistoryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NonHistoryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD1A30BF2271ECDA006781EE /* NonHistoryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonHistoryUITests.swift; sourceTree = "<group>"; };
 		CD1A30C12271ECDA006781EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD1A30D82271FB31006781EE /* Raleway-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Black.ttf"; sourceTree = "<group>"; };
+		CD1A30D92271FB31006781EE /* Raleway-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Thin.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +81,7 @@
 		CD1A308D2271ECD8006781EE = {
 			isa = PBXGroup;
 			children = (
+				CD1A30D52271FB19006781EE /* Resources */,
 				CD1A30982271ECD8006781EE /* NonHistory */,
 				CD1A30B32271ECD9006781EE /* NonHistoryTests */,
 				CD1A30BE2271ECDA006781EE /* NonHistoryUITests */,
@@ -104,9 +103,6 @@
 			isa = PBXGroup;
 			children = (
 				CD1A30992271ECD8006781EE /* AppDelegate.swift */,
-				CD1A309B2271ECD8006781EE /* GameScene.sks */,
-				CD1A309D2271ECD8006781EE /* Actions.sks */,
-				CD1A309F2271ECD8006781EE /* GameScene.swift */,
 				CD1A30A12271ECD8006781EE /* GameViewController.swift */,
 				CD1A30A32271ECD8006781EE /* Main.storyboard */,
 				CD1A30A62271ECD9006781EE /* Assets.xcassets */,
@@ -132,6 +128,23 @@
 				CD1A30C12271ECDA006781EE /* Info.plist */,
 			);
 			path = NonHistoryUITests;
+			sourceTree = "<group>";
+		};
+		CD1A30D52271FB19006781EE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CD1A30D62271FB24006781EE /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CD1A30D62271FB24006781EE /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CD1A30D92271FB31006781EE /* Raleway-Thin.ttf */,
+				CD1A30D82271FB31006781EE /* Raleway-Black.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,10 +252,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD1A30A52271ECD8006781EE /* Main.storyboard in Resources */,
-				CD1A309C2271ECD8006781EE /* GameScene.sks in Resources */,
+				CD1A30DC227200D0006781EE /* Raleway-Thin.ttf in Resources */,
 				CD1A30A72271ECD9006781EE /* Assets.xcassets in Resources */,
 				CD1A30AA2271ECD9006781EE /* LaunchScreen.storyboard in Resources */,
-				CD1A309E2271ECD8006781EE /* Actions.sks in Resources */,
+				CD1A30DD227200D4006781EE /* Raleway-Black.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,7 +280,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD1A30A02271ECD8006781EE /* GameScene.swift in Sources */,
 				CD1A30A22271ECD8006781EE /* GameViewController.swift in Sources */,
 				CD1A309A2271ECD8006781EE /* AppDelegate.swift in Sources */,
 			);
